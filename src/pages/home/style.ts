@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const HomeContainer = styled.div`
   margin-top: 120px;
@@ -32,6 +33,10 @@ export const RedSpan = styled(HomeSpan)`
 export const HomeImg = styled.img`
   width: 374px;
   height: 374px;
+  margin-bottom: 20px;
+`;
+
+export const LinkBox = styled(Link)`
   margin-bottom: 20px;
 `;
 

@@ -10,6 +10,9 @@ const GlobalStyle = createGlobalStyle`
     width: 430px;
     margin: 0 auto;
   }
+  a {
+  text-decoration: none;
+}
 `;
 
 export default GlobalStyle;

@@ -1,6 +1,5 @@
 import * as style from "./style";
 import SubmitButton from "../../components/SubmitButton";
-import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
@@ -12,9 +11,9 @@ export default function Home() {
         </style.HomeSpan>
       </style.TitleBox>
       <style.HomeImg src={"/images/main Image.png"} />
-      <Link to={"/question-name"}>
-        <SubmitButton text={"이야기 만들러가기"} marginB={20} />
-      </Link>
+      <style.LinkBox to={"/question-name"}>
+        <SubmitButton text={"이야기 만들러가기"} />
+      </style.LinkBox>
       <style.SubSpan>지금까지 13,203명이 이야기를 만들었어요.</style.SubSpan>
     </style.HomeContainer>
   );
