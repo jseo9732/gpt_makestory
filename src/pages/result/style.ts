@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-export const ResultContainer = styled.div`
+export const ResultContainer = styled.main`
   background: #f5f5f7 0% 0% no-repeat padding-box;
   opacity: 1;
   display: flex;
@@ -9,10 +9,10 @@ export const ResultContainer = styled.div`
   align-items: center;
 `;
 
-export const ContentBox = styled.div`
   width: 374px;
   height: 546px;
   margin: 55px 0 30px 0;
+export const ContentBox = styled.article`
   padding: 30px 19px;
   background: #ffffff 0% 0% no-repeat padding-box;
   opacity: 1;

@@ -4,7 +4,7 @@ import * as style from "./style";
 export default function QuestionName() {
   return (
     <style.Container>
-      <style.TitleBox margin={71}>
+      <style.TitleBox>
         <style.QuestionSpan>
           당신은 <style.BlueSpan>시간 여행자</style.BlueSpan>입니다. 이름이
           궁금해요.

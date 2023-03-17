@@ -1,15 +1,15 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
   margin-top: 120px;
+export const Container = styled.main`
   display: flex;
   flex-direction: column;
   align-items: center;
 `;
 
-export const TitleBox = styled.span<{ margin: number }>`
   margin: ${({ margin }) => `0 ${margin}px 179px ${margin}px`};
   text-align: center;
+export const TitleBox = styled.h1`
 `;
 
 export const QuestionSpan = styled.span`
@@ -21,11 +21,11 @@ export const QuestionSpan = styled.span`
   color: #000000;
 `;
 
-export const BlueSpan = styled(QuestionSpan)`
+export const BlueSpan = styled.strong`
   color: #3f7ae2;
 `;
 
-export const RedSpan = styled(QuestionSpan)`
+export const RedSpan = styled.strong`
   color: #ed706b;
 `;
 

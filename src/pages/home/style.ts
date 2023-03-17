@@ -1,16 +1,16 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-export const HomeContainer = styled.div`
   margin-top: 120px;
+export const HomeContainer = styled.main`
   display: flex;
   flex-direction: column;
   align-items: center;
 `;
 
-export const TitleBox = styled.span`
   margin: 0 35px 30px 35px;
   text-align: center;
+export const TitleBox = styled.h1`
 `;
 
 export const HomeSpan = styled.span`
@@ -22,11 +22,11 @@ export const HomeSpan = styled.span`
   color: #000000;
 `;
 
-export const BlueSpan = styled(HomeSpan)`
+export const BlueSpan = styled.strong`
   color: #3f7ae2;
 `;
 
-export const RedSpan = styled(HomeSpan)`
+export const RedSpan = styled.strong`
   color: #ed706b;
 `;
 
