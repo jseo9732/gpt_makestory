@@ -1,15 +1,18 @@
 import styled from "styled-components";
 
-  margin-top: 120px;
 export const Container = styled.main`
+  width: 100%;
+  padding: 0 28px;
   display: flex;
   flex-direction: column;
   align-items: center;
 `;
 
-  margin: ${({ margin }) => `0 ${margin}px 179px ${margin}px`};
-  text-align: center;
 export const TitleBox = styled.h1`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 179px;
 `;
 
 export const QuestionSpan = styled.span`

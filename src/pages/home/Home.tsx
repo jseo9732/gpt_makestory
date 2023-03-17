@@ -7,7 +7,9 @@ export default function Home() {
       <style.TitleBox>
         <style.HomeSpan>
           내가 조선으로 <style.BlueSpan>시간여행</style.BlueSpan>을 한다면
-          <style.RedSpan>임진왜란</style.RedSpan>을 어떻게 막았을까?
+        </style.HomeSpan>
+        <style.HomeSpan>
+          <style.RedSpan> 임진왜란</style.RedSpan>을 어떻게 막았을까?
         </style.HomeSpan>
       </style.TitleBox>
       <style.HomeImg src={"/images/main Image.png"} />

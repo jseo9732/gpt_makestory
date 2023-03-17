@@ -1,16 +1,20 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-  margin-top: 120px;
 export const HomeContainer = styled.main`
+  width: 100%;
+  margin: auto 0;
+  padding: 0 28px;
   display: flex;
   flex-direction: column;
   align-items: center;
 `;
 
-  margin: 0 35px 30px 35px;
-  text-align: center;
 export const TitleBox = styled.h1`
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 export const HomeSpan = styled.span`
@@ -31,12 +35,13 @@ export const RedSpan = styled.strong`
 `;
 
 export const HomeImg = styled.img`
-  width: 374px;
-  height: 374px;
+  width: 100%;
+  height: auto;
   margin-bottom: 20px;
 `;
 
 export const LinkBox = styled(Link)`
+  width: 100%;
   margin-bottom: 20px;
 `;
 

@@ -24,13 +24,14 @@ export default function QuestionForm({ placeholder, link, text }: IProps) {
 }
 
 export const FormContainer = styled.form`
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 `;
 
 export const QuestionInput = styled.input`
-  width: 374px;
+  width: 100%;
   height: 57px;
   border: 0;
   border-bottom: 2px solid #c6c8cc;

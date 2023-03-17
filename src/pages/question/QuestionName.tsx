@@ -6,9 +6,9 @@ export default function QuestionName() {
     <style.Container>
       <style.TitleBox>
         <style.QuestionSpan>
-          당신은 <style.BlueSpan>시간 여행자</style.BlueSpan>입니다. 이름이
-          궁금해요.
+          당신은 <style.BlueSpan>시간 여행자</style.BlueSpan>입니다.
         </style.QuestionSpan>
+        <style.QuestionSpan>이름이 궁금해요.</style.QuestionSpan>
       </style.TitleBox>
       <QuestionForm
         placeholder={"이름"}

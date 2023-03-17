@@ -16,8 +16,9 @@ export default function SubmitButton({ text, theme, icon }: IProps) {
 }
 
 export const Button = styled.button<{ theme?: string }>`
-  width: 374px;
-  height: 60px;
+  width: 100%;
+  min-height: 60px;
+  padding: 12px;
   position: relative;
   display: flex;
   justify-content: center;

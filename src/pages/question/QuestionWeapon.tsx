@@ -5,9 +5,9 @@ export default function QuestionWeapon() {
   return (
     <style.Container>
       <style.TitleBox>
+        <style.QuestionSpan>미래에서 무기를 가져갈거에요.</style.QuestionSpan>
         <style.QuestionSpan>
-          미래에서 무기를 가져갈거에요. <style.RedSpan>무기 이름</style.RedSpan>
-          을 알려주세요.
+          <style.RedSpan>무기 이름</style.RedSpan>을 알려주세요.
         </style.QuestionSpan>
       </style.TitleBox>
       <QuestionForm
