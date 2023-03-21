@@ -60,7 +60,7 @@ export default function QuestionForm({ placeholder, text }: IProps) {
             weapon,
             story: res.data.choices[0].message.content,
           });
-          navigate(`/result/${docRef.id}`);
+          navigate(`/result/${docRef.id}`, { replace: true });
         } catch (e) {
           console.error("Error adding document: ", e);
         }
@@ -86,6 +86,7 @@ export default function QuestionForm({ placeholder, text }: IProps) {
           state: {
             name,
           },
+          replace: true,
         });
       } else {
         alert("이름을 입력해주세요.");
