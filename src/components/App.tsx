@@ -11,7 +11,7 @@ import Result from "../pages/result/Result";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/gpt_makestory/">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/question-name" element={<QuestionName />} />
