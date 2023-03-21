@@ -12,7 +12,6 @@ export default function QuestionWeapon() {
       </style.TitleBox>
       <QuestionForm
         placeholder={"무기 이름(ex. 아이언맨 슈트)"}
-        link={"/result"}
         text={"자! 이야기를 공개합니다!"}
       />
     </style.Container>

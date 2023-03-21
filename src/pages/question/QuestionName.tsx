@@ -10,11 +10,7 @@ export default function QuestionName() {
         </style.QuestionSpan>
         <style.QuestionSpan>이름이 궁금해요.</style.QuestionSpan>
       </style.TitleBox>
-      <QuestionForm
-        placeholder={"이름"}
-        link={"/weapon-question"}
-        text={"다음(1/2)"}
-      />
+      <QuestionForm placeholder={"이름"} text={"다음(1/2)"} />
     </style.Container>
   );
 }
