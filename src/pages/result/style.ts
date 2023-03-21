@@ -20,6 +20,7 @@ export const ContentBox = styled.article`
   background: #ffffff 0% 0% no-repeat padding-box;
   opacity: 1;
   overflow: auto;
+  white-space: pre-line;
 
   /* font-family: "SHSN-B"; */
   text-align: left;
