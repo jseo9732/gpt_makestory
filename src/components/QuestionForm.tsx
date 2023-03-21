@@ -81,13 +81,21 @@ export default function QuestionForm({ placeholder, text }: IProps) {
   const onQuestionSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (isNameQuestion) {
-      navigate("/weapon-question", {
-        state: {
-          name,
-        },
-      });
+      if (name !== "") {
+        navigate("/weapon-question", {
+          state: {
+            name,
+          },
+        });
+      } else {
+        alert("이름을 입력해주세요.");
+      }
     } else {
-      callOpenAI();
+      if (name !== "" && weapon !== "") {
+        callOpenAI();
+      } else {
+        alert("원하는 무기를 입력해주세요.");
+      }
     }
   };
 
