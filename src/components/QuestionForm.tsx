@@ -87,7 +87,7 @@ export default function QuestionForm({ placeholder, text }: IProps) {
     e.preventDefault();
     if (isNameQuestion) {
       if (name !== "") {
-        navigate("/weapon-question", {
+        navigate("/question-weapon", {
           state: {
             name,
           },
