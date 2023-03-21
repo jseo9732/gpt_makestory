@@ -21,7 +21,12 @@ export default function QuestionForm({ placeholder, text }: IProps) {
 
   useEffect(() => {
     if (!isNameQuestion) {
-      setName(location.state.name);
+      if (location.state !== null) {
+        setName(location.state.name);
+      } else {
+        alert("이름이 없어요. 이야기를 다시 만들어보세요!");
+        navigate("/");
+      }
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
