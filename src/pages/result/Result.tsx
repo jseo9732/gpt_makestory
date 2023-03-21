@@ -48,7 +48,7 @@ export default function Result() {
         <SubmitButton text={"이야기 다시 만들러가기"} theme={"white"} />
       </style.LinkBox>
       <style.BtnBox onClick={copyLink}>
-        <SubmitButton text={"이야기 공유하기"} icon={"/images/link icon.png"} />
+        <SubmitButton text={"이야기 공유하기"} icon={"/images/link_icon.png"} />
       </style.BtnBox>
     </style.ResultContainer>
   );
