@@ -9,9 +9,14 @@ import db from "../lib/firebase-config";
 interface IProps {
   placeholder: string;
   text: string;
+  setLoading?: any;
 }
 
-export default function QuestionForm({ placeholder, text }: IProps) {
+export default function QuestionForm({
+  placeholder,
+  text,
+  setLoading,
+}: IProps) {
   const navigate = useNavigate();
   const location = useLocation();
   const isNameQuestion = location.pathname === "/question-name";
@@ -66,6 +71,7 @@ export default function QuestionForm({ placeholder, text }: IProps) {
             story: res.data.choices[0].message.content,
           });
           navigate(`/result/${docRef.id}`, { replace: true });
+          setLoading(false);
         } catch (e) {
           console.error("Error adding document: ", e);
         }
@@ -98,6 +104,7 @@ export default function QuestionForm({ placeholder, text }: IProps) {
       }
     } else {
       if (name !== "" && weapon !== "") {
+        setLoading(true);
         callOpenAI();
       } else {
         alert("원하는 무기를 입력해주세요.");

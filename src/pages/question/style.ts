@@ -46,3 +46,9 @@ export const QuestionInput = styled.input`
   margin-bottom: 120px;
 `;
 
+export const LoadingSpan = styled(QuestionSpan)`
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 0.75px;
+  margin-top: 30px;
+`;
