@@ -1,12 +1,13 @@
 import * as style from "./style";
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import SubmitButton from "../../components/SubmitButton";
 import { doc, getDoc } from "firebase/firestore";
 import db from "../../lib/firebase-config";
 
 export default function Result() {
   const { id } = useParams();
+  const navigate = useNavigate();
 
   const [name, setName] = useState<string>("");
   const [story, setStory] = useState<string>("");
@@ -19,11 +20,13 @@ export default function Result() {
         setName(docSnap.data().name);
         setStory(docSnap.data().story);
       } else {
-        console.log("No such document!");
+        alert("경로가 잘못되었습니다. 이야기를 다시 만들어보세요!");
+        navigate("/");
       }
     };
 
     getStory();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id]);
 
   const copyLink = async () => {
