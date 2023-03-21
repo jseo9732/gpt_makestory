@@ -46,4 +46,3 @@ export const QuestionInput = styled.input`
   margin-bottom: 120px;
 `;
 
-export const QuestionButton = styled.button``;
