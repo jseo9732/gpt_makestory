@@ -54,7 +54,6 @@ export default function QuestionForm({
               6. 그렇게 주인공은 영웅이 되었고, 교과서에 등재되어 지금까지도 많은 학생들이 그를 알게되었어.`,
             },
           ],
-          temperature: 0.7,
         },
         {
           headers: {
