@@ -26,11 +26,7 @@ export default function Home() {
           <style.RedSpan> 임진왜란</style.RedSpan>을 어떻게 막았을까?
         </style.HomeSpan>
       </style.TitleBox>
-      <style.HomeImg
-        src={
-          "https://cdn.pixabay.com/photo/2022/02/17/12/29/joseon-era-7018693_1280.jpg"
-        }
-      />
+      <style.HomeImg src={"/images/main_Image.png"} />
       <style.LinkBox to={"/question-name"}>
         <SubmitButton text={"이야기 만들러가기"} />
       </style.LinkBox>
