@@ -10,7 +10,7 @@ export default function Home() {
   useEffect(() => {
     const getStory = async () => {
       const snapshot = await getCountFromServer(collection(db, "story"));
-      setStoryCount(snapshot.data().count);
+      setStoryCount(snapshot.data().count + 13000);
     };
 
     getStory();
@@ -31,7 +31,7 @@ export default function Home() {
         <SubmitButton text={"이야기 만들러가기"} />
       </style.LinkBox>
       <style.SubSpan>
-        지금까지 {numberComma(storyCount + 13000)}명이 이야기를 만들었어요.
+        지금까지 {numberComma(storyCount)}명이 이야기를 만들었어요.
       </style.SubSpan>
     </style.HomeContainer>
   );
