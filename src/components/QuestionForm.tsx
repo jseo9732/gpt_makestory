@@ -76,6 +76,8 @@ export default function QuestionForm({
         }
       })
       .catch((err) => {
+        alert("ChatGPT 응답에 문제가 생겼습니다. 다시 시도해주세요.");
+        navigate(`/`, { replace: true });
         console.error("Error: ", err);
       });
   };
