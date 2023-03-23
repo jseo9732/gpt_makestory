@@ -64,10 +64,14 @@ export default function QuestionForm({
       )
       .then(async (res) => {
         try {
+          const date = new Date();
           const docRef = await addDoc(collection(db, "story"), {
             name,
             weapon,
             story: res.data.choices[0].message.content,
+            createdAt: `${date.getFullYear()}/${
+              date.getMonth() + 1
+            }/${date.getDate()} ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`,
           });
           navigate(`/result/${docRef.id}`, { replace: true });
           setLoading(false);
