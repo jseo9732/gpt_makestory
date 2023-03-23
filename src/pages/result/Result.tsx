@@ -51,7 +51,7 @@ export default function Result() {
         <SubmitButton text={"이야기 공유하기"} icon={"/images/link_icon.png"} />
       </style.BtnBox>
       <style.emailTitle>
-        문의:
+        문의:&nbsp;
         <style.emailSpan href="mailto:qudvkfzoqtyd1@gmail.com">
           qudvkfzoqtyd1@gmail.com
         </style.emailSpan>
