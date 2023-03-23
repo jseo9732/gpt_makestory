@@ -50,6 +50,12 @@ export default function Result() {
       <style.BtnBox onClick={copyLink}>
         <SubmitButton text={"이야기 공유하기"} icon={"/images/link_icon.png"} />
       </style.BtnBox>
+      <style.emailTitle>
+        문의:
+        <style.emailSpan href="mailto:qudvkfzoqtyd1@gmail.com">
+          qudvkfzoqtyd1@gmail.com
+        </style.emailSpan>
+      </style.emailTitle>
     </style.ResultContainer>
   );
 }

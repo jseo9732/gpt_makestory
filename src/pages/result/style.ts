@@ -14,7 +14,7 @@ export const ResultContainer = styled.main`
 
 export const ContentBox = styled.article`
   width: 100%;
-  height: 546px;
+  height: 500px;
   margin-bottom: 30px;
   padding: 30px 19px;
   background: #ffffff 0% 0% no-repeat padding-box;
@@ -29,7 +29,7 @@ export const ContentBox = styled.article`
   letter-spacing: 0.7px;
   color: #000000;
   @media (max-width: 430px) {
-    height: calc(100vh - 200px);
+    height: calc(100vh - 250px);
   }
 `;
 
@@ -40,4 +40,26 @@ export const LinkBox = styled(Link)`
 
 export const BtnBox = styled.div`
   width: 100%;
+  margin-bottom: 15px;
+`;
+
+export const emailTitle = styled.span`
+  /* font-family: "SHSN-B"; */
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.7px;
+  color: #000000;
+`;
+
+export const emailSpan = styled.a`
+  /* font-family: "SHSN-B"; */
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.7px;
+  color: #000000;
+  &:hover {
+    text-decoration: underline;
+  }
 `;
