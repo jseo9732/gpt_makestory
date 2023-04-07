@@ -1,20 +1,20 @@
 import * as style from "./style";
-import { useEffect, useState } from "react";
-import { numberComma } from "../../lib/numberFomat";
+// import { useEffect, useState } from "react";
+// import { numberComma } from "../../lib/numberFomat";
 import SubmitButton from "../../components/SubmitButton";
-import { collection, getCountFromServer } from "firebase/firestore";
-import db from "../../lib/firebase-config";
+// import { collection, getCountFromServer } from "firebase/firestore";
+// import db from "../../lib/firebase-config";
 
 export default function Home() {
-  const [storyCount, setStoryCount] = useState<number>(0);
-  useEffect(() => {
-    const getStory = async () => {
-      const snapshot = await getCountFromServer(collection(db, "story"));
-      setStoryCount(snapshot.data().count + 13000);
-    };
+  // const [storyCount, setStoryCount] = useState<number>(0);
+  // useEffect(() => {
+  //   const getStory = async () => {
+  //     const snapshot = await getCountFromServer(collection(db, "story"));
+  //     setStoryCount(snapshot.data().count + 13000);
+  //   };
 
-    getStory();
-  }, []);
+  //   getStory();
+  // }, []);
 
   return (
     <style.HomeContainer>
@@ -30,9 +30,9 @@ export default function Home() {
       <style.LinkBox to={"/question-name"}>
         <SubmitButton text={"이야기 만들러가기"} />
       </style.LinkBox>
-      <style.SubSpan>
+      {/* <style.SubSpan>
         지금까지 {numberComma(storyCount)}명이 이야기를 만들었어요.
-      </style.SubSpan>
+      </style.SubSpan> */}
     </style.HomeContainer>
   );
 }
