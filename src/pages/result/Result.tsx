@@ -4,6 +4,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import SubmitButton from "../../components/SubmitButton";
 import { doc, getDoc } from "firebase/firestore";
 import db from "../../lib/firebase-config";
+import AD from "../../components/AD";
 
 export default function Result() {
   const { id } = useParams();
@@ -44,6 +45,7 @@ export default function Result() {
         {`《시간 여행자 ${name}》`}
         {story}
       </style.ContentBox>
+      <AD />
       <style.LinkBox to={"/"}>
         <SubmitButton text={"이야기 다시 만들러가기"} theme={"white"} />
       </style.LinkBox>

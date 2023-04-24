@@ -14,8 +14,8 @@ export const ResultContainer = styled.main`
 
 export const ContentBox = styled.article`
   width: 100%;
-  height: 500px;
-  margin-bottom: 30px;
+  height: calc(100vh - 320px);
+  margin-bottom: 20px;
   padding: 30px 19px;
   background: #ffffff 0% 0% no-repeat padding-box;
   opacity: 1;
@@ -28,13 +28,11 @@ export const ContentBox = styled.article`
   line-height: 18px;
   letter-spacing: 0.7px;
   color: #000000;
-  @media (max-width: 430px) {
-    height: calc(100vh - 250px);
-  }
 `;
 
 export const LinkBox = styled(Link)`
   width: 100%;
+  margin-top: 10px;
   margin-bottom: 20px;
 `;
 

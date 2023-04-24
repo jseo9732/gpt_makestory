@@ -135,6 +135,7 @@ export const FormContainer = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 20px;
 `;
 
 export const QuestionInput = styled.input`
