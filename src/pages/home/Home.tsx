@@ -2,7 +2,7 @@ import * as style from "./style";
 // import { useEffect, useState } from "react";
 // import { numberComma } from "../../lib/numberFomat";
 import SubmitButton from "../../components/SubmitButton";
-import AD from "../../components/AD";
+import GoogleAd from "../../components/GoogleAd";
 // import { collection, getCountFromServer } from "firebase/firestore";
 // import db from "../../lib/firebase-config";
 
@@ -31,7 +31,7 @@ export default function Home() {
       <style.LinkBox to={"/question-name"}>
         <SubmitButton text={"이야기 만들러가기"} />
       </style.LinkBox>
-      <AD />
+      <GoogleAd />
       {/* <style.SubSpan>
         지금까지 {numberComma(storyCount)}명이 이야기를 만들었어요.
       </style.SubSpan> */}

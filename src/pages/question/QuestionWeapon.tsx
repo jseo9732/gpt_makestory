@@ -2,7 +2,7 @@ import * as style from "./style";
 import { useState } from "react";
 import QuestionForm from "../../components/QuestionForm";
 import CircularProgress from "@mui/material/CircularProgress";
-import AD from "../../components/AD";
+import GoogleAd from "../../components/GoogleAd";
 
 export default function QuestionWeapon() {
   const [loading, setLoading] = useState<boolean>(false);
@@ -33,7 +33,7 @@ export default function QuestionWeapon() {
             text={"자! 이야기를 공개합니다!"}
             setLoading={setLoading}
           />
-          <AD />
+          <GoogleAd />
         </>
       )}
     </style.Container>

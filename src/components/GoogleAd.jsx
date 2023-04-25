@@ -1,8 +1,7 @@
 import { useEffect } from "react";
 
-export default function AD() {
+export default function GoogleAd() {
   useEffect(() => {
-    console.log(process.env.NODE_ENV);
     if (window.adsbygoogle && process.env.NODE_ENV !== "development") {
       (window.adsbygoogle = window.adsbygoogle || []).push({});
     }
